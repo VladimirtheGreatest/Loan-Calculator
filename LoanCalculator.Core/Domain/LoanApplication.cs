@@ -26,6 +26,7 @@ namespace LoanCalculator.Core.Domain
 
         [Required]
         [DisplayName("Credit Score")]
+        [Range(300,850, ErrorMessage = "Error, credit must be the number between 300 and 850")]
         public int CreditScore { get; set; }
 
         [Required]
